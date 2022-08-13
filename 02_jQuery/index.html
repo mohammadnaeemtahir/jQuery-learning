@@ -10,14 +10,22 @@
 
 <body>
     <h1>Is jQuery working?</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, nulla.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, nulla.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, nulla.</p>
+    
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-    <script src="./jquery-3.6.0.min.js"></script>
     <script>
-        if (window.jQuery) {
-            alert('Yes, jQuery loaded!')
-        } else {
-            alert('No, jQuery not loaded!')
-        }
+
+        // method_01
+        // jQuery('h1').css('color', 'green');
+
+        // method_02 (generally used)
+        $('h1').css('color', 'red');
+
+        $('p').css('color', 'green');
     </script>
 </body>
 
